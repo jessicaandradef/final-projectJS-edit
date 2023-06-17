@@ -1,0 +1,30 @@
+@import url("style.css/header.css");
+@import url("style.css/banner__img.css");
+@import url("style.css/main.css");
+@import url("style.css/banner__text.css");
+@import url("style.css/banner__nomad.css");
+@import url("style.css/footer.css");
+@import url("style.css/shop__page.css");
+@import url("style.css/product__page.css");
+@import url("style.css/modal.css");
+@import url("style.css/loading.css");
+
+@font-face {
+  font-family: fontStore;
+  src: url("2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+
+:root {
+  --white: #ffffff;
+  --lightgray: lightgray;
+  --darkgray: #514f4d;
+  --mediumgray: #9c9c9c;
+  --black: black;
+  --yellow: #fced70;
+  --beige: #f7eee3;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: fontStore;
+}

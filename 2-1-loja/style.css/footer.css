@@ -1,0 +1,119 @@
+.footer__primary {
+  background-color: var(--darkgray);
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.subscribe__section form {
+  display: flex;
+}
+
+.subscribe__section form input {
+  padding: 0 3rem 0 0.5rem;
+  outline: none;
+  border: 1px solid var(--beige);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: transparent;
+}
+
+.subscribe__section form button {
+  padding: 1rem 1rem;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: var(--beige);
+  font-family: fontStore;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer__primary .footer__icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__secondary {
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  padding: 4rem 1.5rem 0 1.5rem;
+}
+
+.footer__secondary-title {
+  font-weight: 700;
+}
+
+.footer__secondary-item,
+.footer__secondary-title {
+  list-style: none;
+  padding-bottom: 1rem;
+}
+
+.footer__secondary-item a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer__tertiary {
+  background-color: var(--black);
+  color: var(--darkgray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .form-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscribe__section form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    width: 80%;
+    gap: 0.3rem;
+  }
+
+  .subscribe__section form input {
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .subscribe__section form button {
+    border-radius: 5px;
+  }
+
+  .footer__primary {
+    padding: 5rem 0;
+  }
+
+  .footer__primary .footer__icons {
+    display: none;
+  }
+
+  .footer__secondary,
+  .footer__tertiary {
+    display: block;
+  }
+
+  .footer__secondary-list,
+  .footer__tertiary-item {
+    font-size: 0.8rem;
+  }
+
+  .footer__secondary-list {
+    padding-top: 1rem;
+  }
+}

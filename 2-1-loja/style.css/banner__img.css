@@ -1,0 +1,49 @@
+.banner__img {
+  height: 50vh;
+  width: 100%;
+  background: url(../2-1-loja/assets/splash-screen.webp) center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem 8rem;
+  box-sizing: border-box;
+}
+
+.banner__img-title {
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+.btn {
+  font-family: fontStore;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  background: var(--yellow);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-btn {
+  margin-top: 1rem;
+  align-self: center;
+}
+
+/*@media screen and (max-width: 1024px) {
+}*/
+
+@media screen and (max-width: 768px) {
+  .banner__img {
+    justify-content: flex-end;
+    padding: 2rem 2rem;
+  }
+}

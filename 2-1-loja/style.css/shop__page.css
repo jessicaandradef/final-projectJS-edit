@@ -1,0 +1,120 @@
+/*NAVBAR*/
+.shop__navbar {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  background-color: var(--white);
+  padding: 1.5rem 1.5rem;
+}
+
+.shop__menu-large {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*STORE SECTION*/
+.store__section {
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.main__store-text {
+  padding: 4rem 0 2rem 5rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.main__store-text h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/*INPUT SEARCH*/
+
+/*BOX IMAGE*/
+
+.box__store__img {
+  padding: 0 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box__store-content {
+  width: 33%;
+  padding-bottom: 1.2rem;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.box__store-content h3 {
+  font-size: 1rem;
+}
+
+.box__store-content p {
+  font-size: 0.9rem;
+  color: var(--lightgray);
+}
+
+.box__img {
+  position: relative;
+  width: calc(100% - 0.6rem);
+  flex-wrap: wrap;
+}
+
+.box__img a {
+  cursor: pointer;
+}
+
+.box__img img {
+  width: 100%;
+}
+
+.box__img .hover-img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.box__img:hover .hover-img {
+  display: block;
+  cursor: pointer;
+}
+
+.store__section button {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .shop__navbar {
+    justify-content: space-between;
+  }
+
+  .shop__menu-large {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box__store__img {
+    display: block;
+  }
+
+  .box__store-content {
+    width: 100%;
+  }
+
+  .store__section button {
+    bottom: 1.5%;
+  }
+}
